@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGO_URI)
   console.log("MongoDB error:", err);
 });
 
-app.use("/api/transactions", require("./routes/transaction"));
+app.use("/api/transactions", require("./routes/transactions"));
 
 app.get("/", (req, res) => {
   res.send("Server is running");
